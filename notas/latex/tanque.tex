@@ -1,0 +1,11 @@
+\ifx\du\undefined
+  \newlength{\du}
+\fi
+\setlength{\du}{15\unitlength}
+\begin{circuitikz}
+	\draw (0,0) to [short](0,1) to [sV](0,3)to [short](0,4)
+	-- (1,4) to [R] (1,2) to [L](1,0) -- (0,0)  
+	(1,4) -- (2,4) to [C](2,1) -- (2,0) -- (0,0) 
+
+	;
+\end{circuitikz}

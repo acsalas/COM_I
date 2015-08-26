@@ -1,0 +1,15 @@
+\ifx\du\undefined
+  \newlength{\du}
+\fi
+\setlength{\du}{15\unitlength}
+\begin{circuitikz}
+
+	\draw
+	
+	(0,0)node[transformer] (T1) {}
+	(T1.B1) to [D*,*-*]($(T1.B1)+(4,0)$)
+ 	(T1.B2) to [D*,*-*]($(T1.B2)+(4,0)$)
+ 	(T1.A1) to [short,*-*]
+ 
+;
+\end{circuitikz}
